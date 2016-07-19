@@ -1,10 +1,13 @@
-#define LIGHT 3
-#define FAN 4
-#define HUMIDIFIER 5
-#define PUMP 6
-
 #include <Wire.h>
 #include "Adafruit_AM2315.h"
+#include "rgb_lcd.h"
+
+const int LIGHT = 3;
+const int  FAN = 4;
+const int HUMIDIFIER = 5;
+const int PUMP = 6;
+
+rgb_lcd lcd;
 
 const int lightOnPeriod = 10000;
 const int lightOffPeriod = 5000;
@@ -15,7 +18,7 @@ int lightTurnedOn = 0;
 int lightTurnedOff = 0;
 
 const int desiredTemperature = 22;
-const int desiredHumidity = 47;
+const int desiredHumidity = 50;
 
 Adafruit_AM2315 am2315;
 
@@ -24,6 +27,9 @@ float currentHumidity;
 
 void setup() {
   Serial.begin(9600);
+  
+  lcd.begin(16, 2);
+  lcd.setRGB(255,0,0);
 
   pinMode(FAN, OUTPUT);
   pinMode(HUMIDIFIER, OUTPUT);
