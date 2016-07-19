@@ -66,8 +66,16 @@ void loop() {
     Serial.println("Failed to read from am2315");
   }
   else {
+    lcd.setCursor(0,0);
+    lcd.print("Temp: ");
+    lcd.setCursor(11, 0);
+    lcd.print(currentTemperature);
     Serial.print("Air Temperature: ");
     Serial.println(currentTemperature);
+    lcd.setCursor(0, 1);
+    lcd.print("Humidity: ");
+    lcd.setCursor(11, 1);
+    lcd.print(currentHumidity);
     Serial.print("Air Humidity: ");
     Serial.println(currentHumidity);
     if (desiredHumidity > currentHumidity) {
