@@ -1,21 +1,21 @@
-#define LIGHT 3
-#define FAN 4
-#define HUMIDIFIER 5
-#define PUMP 6
-
 #include <Wire.h>
 #include "Adafruit_AM2315.h"
 
-const int lightOnPeriod = 10000;
-const int lightOffPeriod = 5000;
+int LIGHT = 3;
+int FAN = 4;
+int HUMIDIFIER = 5;
+int PUMP = 6;
+
+int lightOnPeriod = 10000;
+int lightOffPeriod = 5000;
 
 bool isLightOn = false;
 
 int lightTurnedOn = 0;
 int lightTurnedOff = 0;
 
-const int desiredTemperature = 22;
-const int desiredHumidity = 47;
+int desiredTemperature = 22;
+int desiredHumidity = 47;
 
 Adafruit_AM2315 am2315;
 
