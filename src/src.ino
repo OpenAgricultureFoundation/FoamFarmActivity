@@ -29,16 +29,15 @@ void setup() {
   Serial.begin(9600);
   
   lcd.begin(16, 2);
-  lcd.setRGB(255,0,0);
+  lcd.setRGB(65,105,225);
 
   pinMode(FAN, OUTPUT);
   pinMode(HUMIDIFIER, OUTPUT);
   pinMode(LIGHT, OUTPUT);
   pinMode(PUMP, OUTPUT);
-
-  if (!am2315.begin()) {
-    Serial.println("Failed to initialize am2315");
-    while (true);
+  
+  while (!am2315.begin()) {
+    delay(1000);
   }
 }
 
