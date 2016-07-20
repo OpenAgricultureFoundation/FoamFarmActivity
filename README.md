@@ -1,4 +1,4 @@
-# FoamFarm
+# Foam Farm Activity
 
 Inspired by the work being done on Food Computers, the Foam Farm is an activity for students to learn about some of the ideas
 central to #foodcomputing. In this activity, students build a miniature hydroponic farm out of foam! All tools and materials 
