@@ -20,4 +20,4 @@ given entirely to the community. So, if you are an instructor or a student who i
 education, please get involved!
 
 After running the pilot for this activity, the OpenAg @ MIT team received many ideas and suggestions on how to improve 
-this activity. All of these suggestions can be found as "GitHub Issues" filed under the FoamFarmGuide document.
+this activity. All of these suggestions can be found as "GitHub Issues" filed under the ActivityGuide document.
