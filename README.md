@@ -19,5 +19,5 @@ As the OpenAg team is still quite small (but growing! :p), improving and iterati
 given entirely to the community. So, if you are an instructor or a student who is passionate about cultivating #futurefood
 education, please get involved!
 
-After running the pilot for this activity, the OpenAg @ MIT team got many ideas on how to improve this activity. All of 
-these suggestions can be found as "GitHub Issues" filed under the FoamFarmGuide document.
+After running the pilot for this activity, the OpenAg @ MIT team received many ideas and suggestions on how to improve 
+this activity. All of these suggestions can be found as "GitHub Issues" filed under the FoamFarmGuide document.
